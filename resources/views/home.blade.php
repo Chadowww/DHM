@@ -12,12 +12,10 @@
         @vite('resources/js/app.js')
         @vite('resources/css/app.css')
     </head>
-    <body class="antialiased">
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
-        <div id="app">
+    <body class="antialiased h-screen flex-col">
+    <header>
+        @include('components.navbar')
 
-        </div>
+    </header>
     </body>
 </html>
