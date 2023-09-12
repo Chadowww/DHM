@@ -9,16 +9,16 @@
     @vite('resources/js/app.js')
     @vite('resources/css/app.css')
 </head>
-<body class="antialiased h-screen flex-col bg-[#000000e6]">
+<body class="antialiased h-screen flex-col bg-[#353434]">
 <header>
     @include('components.navbar')
     @include('_includes.address')
 </header>
 
-@yield('content')
-
-<footer
-    class="absolute bottom-0 w-full flex flex-col items-center text-center text-white">
+<section class="pt-32">
+    @yield('content')
+</section>
+<footer class=" w-full flex flex-col items-center text-center bg-[#353434] text-white">
     <div class="container px-6 pt-6">
         <!-- Social media icons container -->
         <div class="mb-6 flex justify-center">
@@ -143,12 +143,12 @@
                                     <p class="hidden md:block">43 rue Thiers 33500 Libourne</p>
                                 </button>
                             </div>
-                            <a href="tel:+33612345678" class="flex">
+                            <a href="tel:+330557253201" class="flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                                      stroke="currentColor" class="w-5 h-5 mx-1">
                                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                                 </svg>
-                                <p class="hidden md:block">06 12 34 56 78</p>
+                                <p class="hidden md:block">05 57 25 32 01</p>
                             </a>
                             <a href="mailto:contact@dhminformatique.fr" class="flex">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
