@@ -6,25 +6,23 @@ document.addEventListener("DOMContentLoaded", function () {
     let tarifsbutton = document.querySelector(".nav-tarifs");
     let contactbutton = document.querySelector(".nav-contact");
 
-
     if (window.location.pathname === "/") {
         console.log(homebutton);
-        homebutton.classList.add("text-blue-500");
+        homebutton.classList.add("text-[#37a6dd]");
         homebutton.classList.remove("text-white/90");
     } else if (window.location.pathname === "/tarifs") {
-        tarifsbutton.classList.add("text-blue-500");
+        tarifsbutton.classList.add("[#37a6dd]");
         tarifsbutton.classList.remove("text-white/90");
     } else if (window.location.pathname === "/contact") {
-        contactbutton.classList.add("text-blue-500");
+        contactbutton.classList.add("text-[#37a6dd]");
         contactbutton.classList.remove("text-white/90");
     }
 });
-
 </script>
 
 <template>
-    <div>
-        <div class="header-nav flex lg:w-1/2 justify-evenly m-auto">
+    <div class="fixed z-[1055] w-full bg-[#353434] h-32 shadow-lg">
+        <div class="header-nav flex lg:w-1/2 justify-evenly m-auto pt-2">
             <div class="flex">
                 <button
                     type="button"
@@ -41,12 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
                     <p class="hidden md:block">43 rue Thiers 33500 Libourne</p>
                 </button>
             </div>
-            <a href="tel:+33612345678" class="flex">
+            <a href="tel:+330557253201" class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                      stroke="currentColor" class="w-5 h-5 mx-1">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
                 </svg>
-                <p class="hidden md:block">06 12 34 56 78</p>
+                <p class="hidden md:block">05 57 25 32 01</p>
             </a>
             <a href="mailto:contact@dhminformatique.fr" class="flex">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -58,7 +56,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <!-- Main navigation container -->
         <nav
-            class="relative flex w-full flex-nowrap items-center justify-between  py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
+            class="relative flex w-full flex-nowrap items-center justify-between  py-2 text-neutral-500  hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:flex-wrap lg:justify-start lg:py-4"
             data-te-navbar-ref>
             <div class="flex w-full flex-wrap items-center justify-between px-3">
                 <!-- Hamburger button for mobile view -->
@@ -127,7 +125,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </div>
             </div>
         </nav>
-    </div>:
+    </div>
 </template>
 
 <style scoped>
