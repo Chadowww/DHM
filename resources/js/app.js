@@ -9,3 +9,14 @@ Object.entries(import.meta.globEager('./**/*.vue')).forEach(([path, definition])
 app.mount('#app')
 
 
+// Initialization for ES Users
+import {
+    Collapse,
+    Dropdown,
+    initTE,
+    Modal,
+    Ripple,
+} from "tw-elements";
+
+initTE({ Modal, Ripple, Collapse, Dropdown  });
+
